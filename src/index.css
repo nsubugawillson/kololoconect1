@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@400,0..1,0,24&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-on-surface-variant: #c2c8c7;
+  --color-outline: #8c9291;
+  --color-on-secondary: #492900;
+  --color-error-container: #93000a;
+  --color-on-secondary-fixed: #2c1700;
+  --color-on-background: #d0e7e6;
+  --color-surface-container-high: #192d2d;
+  --color-on-secondary-container: #583300;
+  --color-primary-fixed-dim: #ffb955;
+  --color-on-secondary-fixed-variant: #683d00;
+  --color-surface-container-lowest: #001111;
+  --color-primary-fixed: #ffddb4;
+  --color-on-tertiary-fixed: #1a1c1c;
+  --color-on-surface: #d0e7e6;
+  --color-background: #021616;
+  --color-inverse-primary: #835500;
+  --color-surface-container-highest: #243838;
+  --color-tertiary-fixed: #e2e2e2;
+  --color-secondary-fixed: #ffdcbc;
+  --color-inverse-on-surface: #203434;
+  --color-tertiary-fixed-dim: #c6c6c7;
+  --color-tertiary: #c6c6c7;
+  --color-inverse-surface: #d0e7e6;
+  --color-on-primary-fixed-variant: #633f00;
+  --color-on-tertiary-fixed-variant: #454747;
+  --color-secondary-container: #ed9000;
+  --color-on-tertiary: #2f3131;
+  --color-on-error: #690005;
+  --color-on-tertiary-container: #838484;
+  --color-on-primary: #452b00;
+  --color-primary: #ffb955;
+  --color-surface-tint: #ffb955;
+  --color-surface-variant: #243838;
+  --color-tertiary-container: #1a1c1c;
+  --color-secondary: #ffb86b;
+  --color-primary-container: #2a1800;
+  --color-surface-container-low: #0a1f1f;
+  --color-outline-variant: #424848;
+  --color-on-error-container: #ffdad6;
+  --color-surface-container: #0e2323;
+  --color-surface-bright: #283d3d;
+  --color-on-primary-fixed: #291800;
+  --color-surface-dim: #021616;
+  --color-surface: #021616;
+  --color-secondary-fixed-dim: #ffb86b;
+  --color-on-primary-container: #b57700;
+  --color-error: #ffb4ab;
+
+  --font-headline: "Newsreader", serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-label: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-150%); }
+    100% { transform: translateX(250%); }
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body);
+}
+
+.glass-panel {
+  background-color: rgba(10, 31, 31, 0.7);
+  backdrop-filter: blur(24px);
+}
+
+.glass-nav {
+  background: rgba(10, 31, 31, 0.7);
+  backdrop-filter: blur(24px);
+}
